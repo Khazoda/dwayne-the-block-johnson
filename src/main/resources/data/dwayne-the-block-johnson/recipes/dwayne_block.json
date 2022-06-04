@@ -1,19 +1,22 @@
 {
     "type": "minecraft:crafting_shaped",
     "pattern": [
-        "SGS",
-        "SRS",
-        "SGS"
+        "CRC",
+        "FDF",
+        "CRC"
     ],
     "key": {
-        "S": {
-            "item": "minecraft:stone"
+        "C": {
+            "item": "minecraft:cobblestone"
         },
-        "G": {
-            "item": "minecraft:gold_ingot"
+        "F": {
+            "item": "minecraft:rotten_flesh"
         },
         "R": {
             "item": "minecraft:redstone"
+        },
+        "D": {
+            "item": "dwayne-the-block-johnson:dwayne_item"
         }
     },
     "result": {
