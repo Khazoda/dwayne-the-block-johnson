@@ -1,0 +1,8 @@
+{
+    "parent": "minecraft:block/slab_top",
+    "textures": {
+        "bottom": "dwayne-the-block-johnson:block/dwayne_block_64x",
+        "top": "dwayne-the-block-johnson:block/dwayne_block_64x",
+        "side": "dwayne-the-block-johnson:block/dwayne_block_64x"
+    }
+}

@@ -1,0 +1,13 @@
+{
+    "variants": {
+        "type=bottom": {
+            "model": "dwayne-the-block-johnson:block/dwayne_slab"
+        },
+        "type=double": {
+            "model": "dwayne-the-block-johnson:block/dwayne_block"
+        },
+        "type=top": {
+            "model": "dwayne-the-block-johnson:block/dwayne_slab_top"
+        }
+    }
+}
