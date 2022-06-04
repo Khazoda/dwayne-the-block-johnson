@@ -4,14 +4,15 @@
   "version": "2.0",
   "name": "Dwayne 'The Block' Johnson",
   "description": "Bring Dwayne 'The Block' Johnson into your world",
-  "credits": "Thanks to Dwayne 'The Block' Johnson for being a perfect cube",
+  "credits": "Thanks to the original author, Tetracube for the original mod. Thanks to Dwayne 'The Block' Johnson for being a perfect cube",
   "authors": [
     "Khazoda",
     "Tetracube (4dcube)"
   ],
   "contact": {
     "homepage": "https://seacroak.com/",
-    "sources": "https://github.com/FabricMC/fabric-example-mod"
+    "issues": "https://github.com/Khazoda/dwayne-the-block-johnson/issues",
+    "sources": "https://github.com/Khazoda/dwayne-the-block-johnson"
   },
   "license": "CC0-1.0",
   "icon": "assets/dwayne-the-block-johnson/mod_icon.png",
