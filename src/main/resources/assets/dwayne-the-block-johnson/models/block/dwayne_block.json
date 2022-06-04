@@ -1,0 +1,12 @@
+{
+    "parent": "block/cube",
+    "textures": {
+        "particle": "dwayne-the-block-johnson:block/dwayne_block_particles",
+        "up": "dwayne-the-block-johnson:block/dwayne_block_up",
+        "down": "dwayne-the-block-johnson:block/dwayne_block_down",
+        "north": "dwayne-the-block-johnson:block/dwayne_block_north",
+        "south": "dwayne-the-block-johnson:block/dwayne_block_south",
+        "east": "dwayne-the-block-johnson:block/dwayne_block_east",
+        "west": "dwayne-the-block-johnson:block/dwayne_block_west"
+    }
+}

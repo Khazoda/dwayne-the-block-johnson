@@ -1,0 +1,23 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "SGS",
+        "SRS",
+        "SGS"
+    ],
+    "key": {
+        "S": {
+            "item": "minecraft:stone"
+        },
+        "G": {
+            "item": "minecraft:gold_ingot"
+        },
+        "R": {
+            "item": "minecraft:redstone"
+        }
+    },
+    "result": {
+        "item": "dwayne-the-block-johnson:dwayne_block",
+        "count": 1
+    }
+}
