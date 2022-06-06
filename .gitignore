@@ -1,5 +1,4 @@
 # gradle
-
 .gradle/
 build/
 out/
@@ -31,3 +30,6 @@ bin/
 # fabric
 
 run/
+
+# Negations
+
