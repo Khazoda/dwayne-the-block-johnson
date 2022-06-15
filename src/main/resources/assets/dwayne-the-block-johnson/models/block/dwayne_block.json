@@ -1,6 +1,6 @@
 {
     "parent": "block/cube_all",
     "textures": {
-        "all": "dwayne-the-block-johnson:block/dwayne_block_64x_animated"
+        "all": "dwayne-the-block-johnson:block/dwayne_block_animated"
     }
 }

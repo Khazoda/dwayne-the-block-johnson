@@ -1,6 +1,6 @@
 {
     "parent": "item/generated",
     "textures": {
-        "layer0": "dwayne-the-block-johnson:item/dwayne_item_64x"
+        "layer0": "dwayne-the-block-johnson:item/dwayne_item"
     }
 }
