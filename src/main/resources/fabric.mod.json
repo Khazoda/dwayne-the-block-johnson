@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "id": "dwayne-the-block-johnson",
-  "version": "2.0",
+  "version": "2.0.1",
   "name": "Dwayne 'The Block' Johnson",
   "description": "Bring Dwayne 'The Block' Johnson into your world",
   "credits": "Thanks to the original author, Tetracube for the original mod. Thanks to Dwayne 'The Block' Johnson for being a perfect cube",
@@ -26,7 +26,7 @@
   "depends": {
     "fabricloader": ">=0.14.5",
     "fabric": "*",
-    "minecraft": "~1.18.2",
+    "minecraft": ">=1.18.2",
     "java": ">=17"
   },
   "suggests": {
