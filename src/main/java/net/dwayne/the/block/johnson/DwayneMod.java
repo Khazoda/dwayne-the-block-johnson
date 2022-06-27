@@ -6,6 +6,7 @@ import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
 import net.minecraft.block.FlowerBlock;
+import net.minecraft.block.FlowerPotBlock;
 import net.minecraft.block.Material;
 import net.minecraft.block.SlabBlock;
 import net.minecraft.block.WallBlock;
@@ -40,6 +41,8 @@ public class DwayneMod implements ModInitializer {
         public static final Block DWAYNE_FLOWER = new FlowerBlock(StatusEffects.NIGHT_VISION, 5,
                         AbstractBlock.Settings.of(Material.PLANT).noCollision().breakInstantly()
                                         .sounds(BlockSoundGroup.GRASS).offsetType(AbstractBlock.OffsetType.XZ));
+        public static final Block POTTED_DWAYNE = new FlowerPotBlock(DWAYNE_FLOWER,
+                        FabricBlockSettings.copyOf(Blocks.FLOWER_POT).strength(0.0F).nonOpaque());
 
         // ********* /
         // * Items * /
@@ -57,6 +60,8 @@ public class DwayneMod implements ModInitializer {
 
         // Special Block Items
         public static final BlockItem DWAYNE_FLOWER_ITEM = new BlockItem(DWAYNE_FLOWER,
+                        new Item.Settings().group(ItemGroup.BUILDING_BLOCKS));
+        public static final BlockItem POTTED_DWAYNE_ITEM = new BlockItem(POTTED_DWAYNE,
                         new Item.Settings().group(ItemGroup.BUILDING_BLOCKS));
 
         @Override
@@ -76,7 +81,8 @@ public class DwayneMod implements ModInitializer {
                 // Special Block Items
                 Registry.register(Registry.ITEM, new Identifier("dwayne-the-block-johnson", "dwayne_flower"),
                                 DWAYNE_FLOWER_ITEM);
-
+                Registry.register(Registry.ITEM, new Identifier("dwayne-the-block-johnson", "potted_dwayne"),
+                                POTTED_DWAYNE_ITEM);
                 // Blocks
                 Registry.register(Registry.BLOCK, new Identifier("dwayne-the-block-johnson", "dwayne_block"),
                                 DWAYNE_BLOCK);
@@ -89,7 +95,8 @@ public class DwayneMod implements ModInitializer {
                 // Special Blocks
                 Registry.register(Registry.BLOCK, new Identifier("dwayne-the-block-johnson", "dwayne_flower"),
                                 DWAYNE_FLOWER);
-
+                Registry.register(Registry.BLOCK, new Identifier("dwayne-the-block-johnson", "potted_dwayne"),
+                                POTTED_DWAYNE);
                 // Sounds
                 Registry.register(Registry.SOUND_EVENT, new Identifier("dwayne-the-block-johnson:dwayne"),
                                 DWAYNE_SOUND_EVENT);

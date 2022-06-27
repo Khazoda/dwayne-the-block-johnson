@@ -11,6 +11,7 @@ public final class DwayneModClient implements ClientModInitializer {
         @Environment(EnvType.CLIENT)
         public void onInitializeClient() {
                 BlockRenderLayerMap.INSTANCE.putBlock(DwayneMod.DWAYNE_FLOWER, RenderLayer.getCutout());
+                BlockRenderLayerMap.INSTANCE.putBlock(DwayneMod.POTTED_DWAYNE, RenderLayer.getCutout());
 
         }
 
