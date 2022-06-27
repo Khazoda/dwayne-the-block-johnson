@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cross",
+  "textures": {
+    "cross": "dwayne-the-block-johnson:block/dwayne_flower"
+  }
+}
