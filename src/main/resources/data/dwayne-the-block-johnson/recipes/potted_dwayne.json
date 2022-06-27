@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": ["   ", " D ", " P "],
+  "key": {
+    "D": {
+      "item": "dwayne-the-block-johnson:dwayne_flower"
+    },
+    "P": {
+      "item": "minecraft:flower_pot"
+    }
+  },
+  "result": {
+    "item": "dwayne-the-block-johnson:potted_dwayne",
+    "count": 1
+  }
+}

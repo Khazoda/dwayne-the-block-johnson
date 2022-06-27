@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": ["   ", "DDD", "DDD"],
+  "key": {
+    "D": {
+      "item": "dwayne-the-block-johnson:dwayne_block"
+    }
+  },
+  "result": {
+    "item": "dwayne-the-block-johnson:dwayne_wall",
+    "count": 6
+  }
+}

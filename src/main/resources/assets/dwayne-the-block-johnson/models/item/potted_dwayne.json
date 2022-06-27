@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "dwayne-the-block-johnson:block/potted_dwayne"
+  }
+}
