@@ -30,8 +30,9 @@ public class DwayneBlock extends Block {
   Random rand;
 
   public DwayneBlock(Settings settings, SoundEvent dwayne_sound_event) {
-    super(FabricBlockSettings.copyOf(Blocks.OBSIDIAN).luminance(12).sounds(BlockSoundGroup.AMETHYST_BLOCK)
+    super(FabricBlockSettings.copyOf(Blocks.STONE).luminance(12).sounds(BlockSoundGroup.AMETHYST_BLOCK)
         .hardness(1.5f).requiresTool());
+
     this.setDefaultState((BlockState) ((BlockState) ((BlockState) this.stateManager.getDefaultState())
         .with(Properties.HORIZONTAL_FACING, Direction.NORTH)).with(TRIGGERED, false));
 

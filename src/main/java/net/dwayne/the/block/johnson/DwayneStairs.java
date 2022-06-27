@@ -31,7 +31,7 @@ public class DwayneStairs extends StairsBlock {
 
   public DwayneStairs(BlockState baseBlockState, Settings settings, SoundEvent dwayne_sound_event) {
     super(baseBlockState,
-        FabricBlockSettings.copyOf(Blocks.OBSIDIAN).luminance(12).sounds(BlockSoundGroup.AMETHYST_BLOCK)
+        FabricBlockSettings.copyOf(Blocks.STONE).luminance(12).sounds(BlockSoundGroup.AMETHYST_BLOCK)
             .hardness(1.5f).requiresTool());
 
     rand = new Random();

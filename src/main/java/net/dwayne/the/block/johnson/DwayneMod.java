@@ -20,10 +20,10 @@ public class DwayneMod implements ModInitializer {
         public static SoundEvent DWAYNE_SOUND_EVENT = new SoundEvent(new Identifier("dwayne-the-block-johnson:dwayne"));
         public static final Block DWAYNE_BLOCK = new DwayneBlock(null, DWAYNE_SOUND_EVENT);
         public static final Block DWAYNE_SLAB = new SlabBlock(
-                        FabricBlockSettings.copyOf(Blocks.OBSIDIAN).luminance(12).sounds(BlockSoundGroup.AMETHYST_BLOCK)
+                        FabricBlockSettings.copyOf(Blocks.STONE).luminance(12).sounds(BlockSoundGroup.AMETHYST_BLOCK)
                                         .hardness(1.5f).requiresTool());
         public static final Block DWAYNE_WALL = new WallBlock(
-                        FabricBlockSettings.copyOf(Blocks.OBSIDIAN).luminance(12).sounds(BlockSoundGroup.AMETHYST_BLOCK)
+                        FabricBlockSettings.copyOf(Blocks.STONE).luminance(12).sounds(BlockSoundGroup.AMETHYST_BLOCK)
                                         .hardness(1.5f).requiresTool());
         public static final Block DWAYNE_STAIRS = new DwayneStairs(DwayneMod.DWAYNE_BLOCK.getDefaultState(), null,
                         DWAYNE_SOUND_EVENT);
