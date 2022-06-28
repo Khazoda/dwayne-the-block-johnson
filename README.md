@@ -21,7 +21,6 @@
     <img src="https://github.com/Khazoda/dwayne-the-block-johnson/raw/master/web_assets/splash_2.0.1.png" alt="Dwayne House" width="1146" />
 </p>
 <p style="display: flex; justify-content: center; text-align: left">&nbsp;</p>
-<p style="display: flex; justify-content: center; text-align: left">&nbsp;</p>
 <p>
     <span style="font-size: 18px">Bring Dwayne "The Block" Johnson into your home with these simple
         recipes:</span>
