@@ -33,10 +33,10 @@
             src="https://github.com/Khazoda/dwayne-the-block-johnson/raw/master/web_assets/block_recipe.png"
             alt='Dwayne "The Block" Johnson Recipe' width="608" height="273" /></span>
 </p>
-<p>&nbsp;</p>
 <p>
-    <span style="font-size: 18px">Slab and Stair variants are crafted using multiple Dwayne "The Block"
+    <span style="font-size: 18px">Slab, Wall & Stair variants are crafted using multiple Dwayne "The Block"
         Johnsons in their respective recipe patterns.<br /></span>
+        <span style="font-size: 18px">Craft Dwayne "The Item" Johnson with any flower to get Dwayne "The Flower" Johnson, which can be potted!<br /></span>
 </p>
 <p>&nbsp;</p>
 <p><span style="text-decoration: underline; font-size: 18px">Credits</span></p>
