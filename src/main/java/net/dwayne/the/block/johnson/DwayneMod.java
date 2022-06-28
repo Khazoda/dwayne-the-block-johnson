@@ -10,7 +10,6 @@ import net.minecraft.block.FlowerPotBlock;
 import net.minecraft.block.Material;
 import net.minecraft.block.SlabBlock;
 import net.minecraft.block.WallBlock;
-import net.minecraft.entity.effect.StatusEffect;
 import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
@@ -38,9 +37,9 @@ public class DwayneMod implements ModInitializer {
                         DWAYNE_SOUND_EVENT);
 
         // Special Blocks
-        public static final Block DWAYNE_FLOWER = new FlowerBlock(StatusEffects.NIGHT_VISION, 5,
-                        AbstractBlock.Settings.of(Material.PLANT).noCollision().breakInstantly()
-                                        .sounds(BlockSoundGroup.GRASS).offsetType(AbstractBlock.OffsetType.XZ));
+        public static final Block DWAYNE_FLOWER = new FlowerBlock(StatusEffects.SLOWNESS, 8,
+                        FabricBlockSettings.copyOf(Blocks.POPPY).strength(0.0F).nonOpaque());
+
         public static final Block POTTED_DWAYNE = new FlowerPotBlock(DWAYNE_FLOWER,
                         FabricBlockSettings.copyOf(Blocks.FLOWER_POT).strength(0.0F).nonOpaque());
 
