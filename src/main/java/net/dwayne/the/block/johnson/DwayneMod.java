@@ -18,8 +18,12 @@ import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.sound.SoundEvent;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 public class DwayneMod implements ModInitializer {
+
+        private static final Logger LOGGER = LoggerFactory.getLogger("dwayne-the-mod-johnson");
 
         // ********** /
         // * Blocks * /
@@ -100,6 +104,7 @@ public class DwayneMod implements ModInitializer {
                 Registry.register(Registry.SOUND_EVENT, new Identifier("dwayne-the-block-johnson:dwayne"),
                                 DWAYNE_SOUND_EVENT);
 
+                LOGGER.info("Dwayne 'The Log' Johnson");
         }
 
 }
