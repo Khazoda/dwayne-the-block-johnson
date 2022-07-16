@@ -15,7 +15,8 @@
   "icon": "assets/dwayne-the-block-johnson/mod_icon.png",
   "environment": "*",
   "entrypoints": {
-    "main": ["net.dwayne.the.block.johnson.DwayneMod"]
+    "main": ["net.dwayne.the.block.johnson.DwayneMod"],
+    "client": ["net.dwayne.the.block.johnson.DwayneModClient"]
   },
   "mixins": [],
   "depends": {
