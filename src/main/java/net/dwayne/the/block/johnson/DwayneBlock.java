@@ -44,7 +44,7 @@ public class DwayneBlock extends Block {
   @Override
   public BlockState getPlacementState(ItemPlacementContext ctx) {
     return (BlockState) this.getDefaultState().with(Properties.HORIZONTAL_FACING,
-        ctx.getPlayerFacing().getOpposite());
+        ctx.getHorizontalPlayerFacing().getOpposite());
   }
 
   @Override
@@ -76,7 +76,7 @@ public class DwayneBlock extends Block {
     boolean bl = world.isReceivingRedstonePower(pos) || world.isReceivingRedstonePower(pos.up());
     boolean bl2 = state.get(TRIGGERED);
     if (bl && !bl2) {
-      world.createAndScheduleBlockTick(pos, this, 4);
+      world.scheduleBlockTick(pos, this, 4);
       world.setBlockState(pos, (BlockState) state.with(TRIGGERED, true), Block.NO_REDRAW);
       world.playSound(null, pos, DWAYNE_SOUND_EVENT, SoundCategory.BLOCKS, 1f, 1f);
     } else if (!bl && bl2) {
