@@ -5,7 +5,11 @@
   "name": "Dwayne 'The Block' Johnson",
   "description": "Bring Dwayne 'The Block' Johnson into your world",
   "credits": "Thanks to the original author, Tetracube for the original mod. Thanks to Dwayne 'The Block' Johnson for being a perfect cube",
-  "authors": ["Khazoda", "Tetracube (4dcube)"],
+  "authors": [
+    "Khazoda",
+    "Tetracube (4dcube)",
+    "glisco"
+  ],
   "contact": {
     "homepage": "https://seacroak.com/",
     "issues": "https://github.com/Khazoda/dwayne-the-block-johnson/issues",
@@ -15,8 +19,12 @@
   "icon": "assets/dwayne-the-block-johnson/mod_icon.png",
   "environment": "*",
   "entrypoints": {
-    "main": ["net.dwayne.the.block.johnson.DwayneMod"],
-    "client": ["net.dwayne.the.block.johnson.DwayneModClient"]
+    "main": [
+      "net.dwayne.the.block.johnson.DwayneMod"
+    ],
+    "client": [
+      "net.dwayne.the.block.johnson.DwayneModClient"
+    ]
   },
   "mixins": [],
   "depends": {
