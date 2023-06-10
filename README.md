@@ -18,7 +18,7 @@
             src="https://img.shields.io/modrinth/dt/dwayne?label=Modrinth%20Downloads" /></a>
 </p>
 <p style="text-align: center; display: flex; justify-content: center">
-    <img src="https://github.com/Khazoda/dwayne-the-block-johnson/raw/master/web_assets/splash_2.0.1.png" alt="Dwayne House" width="1146" />
+    <img src="https://raw.githubusercontent.com/Khazoda/dwayne-the-block-johnson/master/web_assets/splash_2.2.0.png" alt="Dwayne House" width="1146" />
 </p>
 <p style="display: flex; justify-content: center; text-align: left">&nbsp;</p>
 <p>
