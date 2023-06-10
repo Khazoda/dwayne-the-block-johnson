@@ -3,7 +3,7 @@
 </h2>
 <p style="text-align: center; display: flex; justify-content: center">
     <img style="display: block" src="https://img.shields.io/badge/mod%20loader-Fabric-brightgreen" />
-    <img style="display: block" src="https://img.shields.io/badge/latest%20version-1.18.2-blue" />
+    <img style="display: block" src="https://img.shields.io/badge/latest%20version-1.20-blue" />
     <img style="display: block" src="https://img.shields.io/github/issues/Khazoda/dwayne-the-block-johnson" />
     <img style="display: block" src="https://img.shields.io/github/last-commit/Khazoda/dwayne-the-block-johnson" />
 </p>
