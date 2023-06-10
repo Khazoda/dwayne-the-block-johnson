@@ -41,4 +41,4 @@
 <p><span style="text-decoration: underline; font-size: 18px">Credits</span></p>
 <p>Tetracube (4dcube) ▶ Created the original mod for 1.16.4</p>
 <p>Dwayne "The Rock" Johnson&nbsp;▶ Graced us with his presence</p>
-<p>glisco&nbsp;▶ Honoured desciple</p>
+<p>glisco&nbsp;▶ Honoured disciple</p>
