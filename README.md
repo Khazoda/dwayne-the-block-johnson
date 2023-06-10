@@ -18,7 +18,7 @@
             src="https://img.shields.io/modrinth/dt/dwayne?label=Modrinth%20Downloads" /></a>
 </p>
 <p style="text-align: center; display: flex; justify-content: center">
-    <img src="https://github.com/Khazoda/dwayne-the-block-johnson/raw/master/web_assets/splash_2.0.1.png" alt="Dwayne House" width="1146" />
+    <img src="https://raw.githubusercontent.com/Khazoda/dwayne-the-block-johnson/master/web_assets/splash_2.2.0.png" alt="Dwayne House" width="1146" />
 </p>
 <p style="display: flex; justify-content: center; text-align: left">&nbsp;</p>
 <p>
@@ -41,4 +41,4 @@
 <p><span style="text-decoration: underline; font-size: 18px">Credits</span></p>
 <p>Tetracube (4dcube) ▶ Created the original mod for 1.16.4</p>
 <p>Dwayne "The Rock" Johnson&nbsp;▶ Graced us with his presence</p>
-<p>glisco&nbsp;▶ Honoured desciple</p>
+<p>glisco&nbsp;▶ Honoured disciple</p>
