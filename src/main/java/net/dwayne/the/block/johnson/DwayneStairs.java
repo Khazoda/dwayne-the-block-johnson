@@ -35,25 +35,15 @@ public class DwayneStairs extends StairsBlock {
   }
 
   @Override
-  public ActionResult onUse(BlockState state, World world, BlockPos pos, PlayerEntity player, Hand hand,
-      BlockHitResult hit) {
-    return ActionResult.CONSUME;
-  }
-
-  @Override
   public void onSteppedOn(World world, BlockPos pos, BlockState state, Entity entity) {
-    if (!world.isClient) {
-      if (entity.getVelocity().x >= 1) {
-        world.playSound(null, pos, SoundEvents.BLOCK_MEDIUM_AMETHYST_BUD_PLACE, SoundCategory.BLOCKS, 1f, 1f);
-      }
-    }
+
     // Client Code
     if (world.isClient) {
-      if (entity.getVelocity().x >= 0.25) {
-          world.addParticle(ParticleTypes.END_ROD, pos.getX() + 0.5, pos.getY() + 0.5, pos.getZ() + 0.5,
-              rand.nextFloat(-0.15f, 0.15f), rand.nextFloat(-0.15f, 0.15f), rand.nextFloat(-0.15f, 0.15f));
-          world.addParticle(ParticleTypes.GLOW, pos.getX() + 0.5, pos.getY() + 0.5, pos.getZ() + 0.5,
-              rand.nextFloat(-0.15f, 0.15f), rand.nextFloat(-0.15f, 0.15f), rand.nextFloat(-0.15f, 0.15f));
+      if (Math.sqrt(Math.pow(entity.getVelocity().x, 2) + Math.pow(entity.getVelocity().y, 2) + Math.pow(entity.getVelocity().z, 2)) >= 0.25) {
+        world.addParticle(ParticleTypes.END_ROD, pos.getX() + 0.5, pos.getY() + 0.5, pos.getZ() + 0.5,
+            rand.nextFloat(-0.15f, 0.15f), rand.nextFloat(-0.15f, 0.15f), rand.nextFloat(-0.15f, 0.15f));
+        world.addParticle(ParticleTypes.GLOW, pos.getX() + 0.5, pos.getY() + 0.5, pos.getZ() + 0.5,
+            rand.nextFloat(-0.15f, 0.15f), rand.nextFloat(-0.15f, 0.15f), rand.nextFloat(-0.15f, 0.15f));
       }
     }
   }
