@@ -6,6 +6,7 @@ import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Blocks;
+import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.ItemPlacementContext;
 import net.minecraft.particle.ParticleTypes;
@@ -49,18 +50,17 @@ public class DwayneBlock extends Block {
 
   @Override
   public ActionResult onUse(BlockState state, World world, BlockPos pos, PlayerEntity player, Hand hand,
-      BlockHitResult hit) {
+                            BlockHitResult hit) {
+
+    if(!player.getMainHandStack().isOf(DwayneMod.DWAYNE_ITEM)) return ActionResult.PASS;
     // Server Code
     if (!world.isClient) {
-      // player.sendMessage(new LiteralText("Dwayne's steely gaze fills you with
-      // determination.").setStyle(Style.EMPTY.withColor(TextColor.fromRgb(777777))),
-      // false);
       world.playSound(null, pos, SoundEvents.BLOCK_MEDIUM_AMETHYST_BUD_PLACE, SoundCategory.BLOCKS, 1f, 1f);
     }
     // Client Code
     if (world.isClient) {
       player.addVelocity(0, 0.35, 0);
-      for (int i = 0; i < 10; i++) {
+      for (int i = 0; i < 3; i++) {
         world.addParticle(ParticleTypes.END_ROD, pos.getX() + 0.5, pos.getY() + 0.5, pos.getZ() + 0.5,
             rand.nextFloat(-0.15f, 0.15f), rand.nextFloat(-0.15f, 0.15f), rand.nextFloat(-0.15f, 0.15f));
         world.addParticle(ParticleTypes.GLOW, pos.getX() + 0.5, pos.getY() + 0.5, pos.getZ() + 0.5,
@@ -72,7 +72,7 @@ public class DwayneBlock extends Block {
 
   @Override
   public void neighborUpdate(BlockState state, World world, BlockPos pos, Block block, BlockPos fromPos,
-      boolean notify) {
+                             boolean notify) {
     boolean bl = world.isReceivingRedstonePower(pos) || world.isReceivingRedstonePower(pos.up());
     boolean bl2 = state.get(TRIGGERED);
     if (bl && !bl2) {

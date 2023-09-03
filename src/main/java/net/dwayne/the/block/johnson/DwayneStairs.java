@@ -23,10 +23,6 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 
 public class DwayneStairs extends StairsBlock {
-
-  public static final BooleanProperty TRIGGERED = Properties.TRIGGERED;
-  public SoundEvent DWAYNE_SOUND_EVENT = null;
-
   Random rand;
 
   public DwayneStairs(BlockState baseBlockState, Settings settings, SoundEvent dwayne_sound_event) {
@@ -47,19 +43,17 @@ public class DwayneStairs extends StairsBlock {
   @Override
   public void onSteppedOn(World world, BlockPos pos, BlockState state, Entity entity) {
     if (!world.isClient) {
-      if (entity.getVelocity().x != 0) {
+      if (entity.getVelocity().x >= 1) {
         world.playSound(null, pos, SoundEvents.BLOCK_MEDIUM_AMETHYST_BUD_PLACE, SoundCategory.BLOCKS, 1f, 1f);
       }
     }
     // Client Code
     if (world.isClient) {
-      if (entity.getVelocity().x != 0) {
-        for (int i = 0; i < 3; i++) {
+      if (entity.getVelocity().x >= 0.25) {
           world.addParticle(ParticleTypes.END_ROD, pos.getX() + 0.5, pos.getY() + 0.5, pos.getZ() + 0.5,
               rand.nextFloat(-0.15f, 0.15f), rand.nextFloat(-0.15f, 0.15f), rand.nextFloat(-0.15f, 0.15f));
           world.addParticle(ParticleTypes.GLOW, pos.getX() + 0.5, pos.getY() + 0.5, pos.getZ() + 0.5,
               rand.nextFloat(-0.15f, 0.15f), rand.nextFloat(-0.15f, 0.15f), rand.nextFloat(-0.15f, 0.15f));
-        }
       }
     }
   }
