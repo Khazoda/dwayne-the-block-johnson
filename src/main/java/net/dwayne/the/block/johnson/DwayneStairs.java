@@ -54,7 +54,7 @@ public class DwayneStairs extends StairsBlock {
     // Client Code
     if (world.isClient) {
       if (entity.getVelocity().x != 0) {
-        for (int i = 0; i < 10; i++) {
+        for (int i = 0; i < 3; i++) {
           world.addParticle(ParticleTypes.END_ROD, pos.getX() + 0.5, pos.getY() + 0.5, pos.getZ() + 0.5,
               rand.nextFloat(-0.15f, 0.15f), rand.nextFloat(-0.15f, 0.15f), rand.nextFloat(-0.15f, 0.15f));
           world.addParticle(ParticleTypes.GLOW, pos.getX() + 0.5, pos.getY() + 0.5, pos.getZ() + 0.5,
