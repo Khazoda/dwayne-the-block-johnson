@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/wall_inventory",
+  "textures": {
+    "wall": "dwayne_the_block_johnson:block/dwayne_block"
+  }
+}

@@ -1,6 +1,0 @@
-{
-    "parent": "block/cube_all",
-    "textures": {
-        "all": "dwayne-the-block-johnson:block/dwayne_block_animated"
-    }
-}

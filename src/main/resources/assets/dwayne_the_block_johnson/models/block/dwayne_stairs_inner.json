@@ -1,0 +1,8 @@
+{
+    "parent": "minecraft:block/inner_stairs",
+    "textures": {
+        "bottom": "dwayne_the_block_johnson:block/dwayne_block",
+        "top": "dwayne_the_block_johnson:block/dwayne_block",
+        "side": "dwayne_the_block_johnson:block/dwayne_block"
+    }
+}

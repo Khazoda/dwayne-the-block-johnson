@@ -1,0 +1,26 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "CRC",
+        "FDF",
+        "CRC"
+    ],
+    "key": {
+        "C": {
+            "item": "minecraft:cobblestone"
+        },
+        "F": {
+            "item": "minecraft:rotten_flesh"
+        },
+        "R": {
+            "item": "minecraft:redstone"
+        },
+        "D": {
+            "item": "dwayne_the_block_johnson:dwayne_item"
+        }
+    },
+    "result": {
+        "item": "dwayne_the_block_johnson:dwayne_block",
+        "count": 4
+    }
+}

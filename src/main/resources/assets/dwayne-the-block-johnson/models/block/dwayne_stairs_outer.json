@@ -1,8 +1,0 @@
-{
-    "parent": "minecraft:block/outer_stairs",
-    "textures": {
-        "bottom": "dwayne-the-block-johnson:block/dwayne_block",
-        "top": "dwayne-the-block-johnson:block/dwayne_block",
-        "side": "dwayne-the-block-johnson:block/dwayne_block"
-    }
-}

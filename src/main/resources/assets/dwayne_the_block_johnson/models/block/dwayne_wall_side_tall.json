@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/template_wall_side_tall",
+  "textures": {
+    "wall": "dwayne_the_block_johnson:block/dwayne_block"
+  }
+}
